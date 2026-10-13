@@ -1,5 +1,6 @@
 column,data_type,unit,source_column,description
-dataset_id,string,none,Added identifier,"Numbered source export. It is not a verified lab, meter or phase identifier."
+dataset_id,string,none,Added identifier,"Stable numbered export identifier, retained when files are named for living labs."
+lab_name,string,none,User-provided export order,Living-lab label supplied by the user. HUYRO SM-MT-2026-01 has identical file contents to NUST SEED Living Lab and requires source verification.
 timestamp_reported,string,unspecified time zone,Time,"ISO 8601 civil timestamp, YYYY-MM-DDTHH:MM:SS, with the original reported clock fields preserved. No UTC offset is assigned."
 voltage_V,number,V,Voltage,Reported voltage. Units interpreted as volts from IAMMETER measurement conventions. Phase not supplied.
 current_A,number,A,Current,Reported current. Units interpreted as amperes from IAMMETER measurement conventions. Phase not supplied.

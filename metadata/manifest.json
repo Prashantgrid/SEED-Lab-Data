@@ -10,11 +10,11 @@
   "nominal_interval_h": 1,
   "aggregation_semantics": "not stated in CSV: hourly timestamps do not establish whether measurements are snapshots or hourly means",
   "units_status": "interpreted as standard IAMMETER V, A, W, VA and dimensionless PF; source headers omit explicit units",
-  "lab_meter_phase_mapping_status": "unconfirmed: source files do not identify lab, meter or phase",
+  "lab_meter_phase_mapping_status": "Lab labels supplied by user; meter, phase and time-zone identities remain unspecified. HUYRO SM-MT-2026-01 and NUST SEED Living Lab are labelled differently but have byte-identical raw exports.",
   "cloud_history_completeness": "not verified; all rows from the ten provided CSV files are preserved",
   "energy_measurements": "not present in the provided files; no energy estimates added",
   "transformation": "Normalize timestamps and numeric thousands separators, add source provenance; no interpolation, sign changes, filtering or correction of source readings",
-  "duplicate_handling": "Retain all ten raw files and all ten standardized per-export files; omit byte-identical export_07 from all_distinct_exports.csv",
+  "duplicate_handling": "Preserve all ten raw files, ten named individual datasets and all 19,539 rows in all_living_labs.csv. The optional all_distinct_exports.csv omits the byte-identical HUYRO SM-MT-2026-01 copy and contains 18,167 rows. Duplicate contents across different supplied lab labels require source verification.",
   "gap_definition": "Unrepresented one-hour civil-time slots between first and last observed timestamps; cause unknown. Counts are not outage indicators and do not establish UTC duration.",
   "gap_intervals_in_distinct_exports": 191,
   "quality_flag_rows_in_distinct_exports": 92,
@@ -40,8 +40,8 @@
       "pf_outside_0_1_records": 0,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_00.csv",
-      "lab_name": null,
+      "standardized_path": "data/BIT_STUDENTS_DORMS.csv",
+      "lab_name": "BIT STUDENTS DORMS",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -67,7 +67,11 @@
           "max": 0.995
         }
       },
-      "notes": ""
+      "notes": "",
+      "lab_order": 1,
+      "previous_standardized_path": "data/export_00.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_01",
@@ -90,8 +94,8 @@
       "pf_outside_0_1_records": 7,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_01.csv",
-      "lab_name": null,
+      "standardized_path": "data/IITB_Pabal.csv",
+      "lab_name": "IITB-Pabal",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -117,7 +121,11 @@
           "max": 1.089
         }
       },
-      "notes": "7 PF values outside 0 to 1; retained"
+      "notes": "7 PF values outside 0 to 1; retained",
+      "lab_order": 2,
+      "previous_standardized_path": "data/export_01.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_02",
@@ -140,8 +148,8 @@
       "pf_outside_0_1_records": 0,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_02.csv",
-      "lab_name": null,
+      "standardized_path": "data/ITB_Living_Lab_Garut.csv",
+      "lab_name": "ITB Living Lab Garut",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -167,7 +175,11 @@
           "max": 0.98
         }
       },
-      "notes": ""
+      "notes": "",
+      "lab_order": 3,
+      "previous_standardized_path": "data/export_02.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_03",
@@ -190,8 +202,8 @@
       "pf_outside_0_1_records": 0,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_03.csv",
-      "lab_name": null,
+      "standardized_path": "data/BDU_TUM_SEED_Living_Lab1.csv",
+      "lab_name": "BDU TUM SEED Living Lab1",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -217,7 +229,11 @@
           "max": 0.942
         }
       },
-      "notes": ""
+      "notes": "",
+      "lab_order": 4,
+      "previous_standardized_path": "data/export_03.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_04",
@@ -240,8 +256,8 @@
       "pf_outside_0_1_records": 15,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_04.csv",
-      "lab_name": null,
+      "standardized_path": "data/MAK_TUMSEED.csv",
+      "lab_name": "MAK TUMSEED",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -267,7 +283,11 @@
           "max": 1.029
         }
       },
-      "notes": "15 PF values outside 0 to 1; retained"
+      "notes": "15 PF values outside 0 to 1; retained",
+      "lab_order": 5,
+      "previous_standardized_path": "data/export_04.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_05",
@@ -290,8 +310,8 @@
       "pf_outside_0_1_records": 68,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_05.csv",
-      "lab_name": null,
+      "standardized_path": "data/JKUAT_Living_Lab.csv",
+      "lab_name": "JKUAT Living Lab",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -317,7 +337,11 @@
           "max": 1.268
         }
       },
-      "notes": "68 PF values outside 0 to 1; retained"
+      "notes": "68 PF values outside 0 to 1; retained",
+      "lab_order": 6,
+      "previous_standardized_path": "data/export_05.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_06",
@@ -340,8 +364,8 @@
       "pf_outside_0_1_records": 0,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_06.csv",
-      "lab_name": null,
+      "standardized_path": "data/NUST_SEED_Living_Lab.csv",
+      "lab_name": "NUST SEED Living Lab",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -367,7 +391,11 @@
           "max": 0.995
         }
       },
-      "notes": ""
+      "notes": "",
+      "lab_order": 7,
+      "previous_standardized_path": "data/export_06.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_07",
@@ -390,8 +418,8 @@
       "pf_outside_0_1_records": 0,
       "all_current_power_zero": false,
       "duplicate_of": "export_06",
-      "standardized_path": "data/export_07.csv",
-      "lab_name": null,
+      "standardized_path": "data/HUYRO_SM_MT_2026_01.csv",
+      "lab_name": "HUYRO SM-MT-2026-01",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -417,7 +445,11 @@
           "max": 0.995
         }
       },
-      "notes": "Byte-identical to export_06; excluded from merged data"
+      "notes": "Byte-identical to NUST SEED Living Lab; labels identify different labs. Preserved in all_living_labs.csv; verify the original export. Excluded from the distinct-content view.",
+      "lab_order": 8,
+      "previous_standardized_path": "data/export_07.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled_duplicate_content_needs_check"
     },
     {
       "dataset_id": "export_08",
@@ -440,8 +472,8 @@
       "pf_outside_0_1_records": 0,
       "all_current_power_zero": false,
       "duplicate_of": "",
-      "standardized_path": "data/export_08.csv",
-      "lab_name": null,
+      "standardized_path": "data/KNUST_Yeboakrom.csv",
+      "lab_name": "KNUST_Yeboakrom",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -467,7 +499,11 @@
           "max": 1
         }
       },
-      "notes": ""
+      "notes": "",
+      "lab_order": 9,
+      "previous_standardized_path": "data/export_08.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     },
     {
       "dataset_id": "export_09",
@@ -490,8 +526,8 @@
       "pf_outside_0_1_records": 0,
       "all_current_power_zero": true,
       "duplicate_of": "",
-      "standardized_path": "data/export_09.csv",
-      "lab_name": null,
+      "standardized_path": "data/HUYRO_SM_LM_2026_01.csv",
+      "lab_name": "HUYRO SM-LM-2026-01",
       "meter_sn": null,
       "phase": null,
       "time_zone": null,
@@ -517,7 +553,14 @@
           "max": 0
         }
       },
-      "notes": "Current and active power are zero in every provided record"
+      "notes": "Current and active power are zero in every provided record",
+      "lab_order": 10,
+      "previous_standardized_path": "data/export_09.csv",
+      "lab_mapping_source": "User-numbered IAMMETER place list, 13 October 2026",
+      "lab_mapping_status": "user_labelled"
     }
-  ]
+  ],
+  "labelled_labs": 10,
+  "lab_labels_source": "User-numbered IAMMETER place list supplied on 13 October 2026",
+  "records_in_all_labelled_labs_file": 19539
 }

@@ -3,7 +3,9 @@
   "validation_date": "2026-10-13",
   "source_files": 10,
   "distinct_source_files": 9,
+  "labelled_labs": 10,
   "source_rows_preserved_in_individual_files": 19539,
+  "rows_in_all_labelled_labs_file": 19539,
   "rows_in_distinct_merged_file": 18167,
   "negative_power_source_rows_preserved": 1654,
   "distinct_gap_intervals_verified": 191,
@@ -12,88 +14,110 @@
   "raw_file_copies_identical": true,
   "all_five_numeric_measurements_preserved_by_decimal_comparison": true,
   "timestamp_normalization_preserves_clock_fields_without_timezone_conversion": true,
-  "duplicate_file_excluded_only_from_merged_dataset": true,
-  "lab_meter_phase_and_timezone_fields_not_inferred": true,
+  "duplicate_content_preserved_under_both_user_labels_in_main_merged_file": true,
+  "duplicate_copy_excluded_only_from_optional_distinct_content_view": true,
+  "lab_names_match_user_provided_order": true,
+  "meter_phase_and_timezone_fields_not_inferred": true,
   "datasets": [
     {
       "dataset_id": "export_00",
+      "lab_name": "BIT STUDENTS DORMS",
       "records_preserved": 3485,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_01",
+      "lab_name": "IITB-Pabal",
       "records_preserved": 1608,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_02",
+      "lab_name": "ITB Living Lab Garut",
       "records_preserved": 2337,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_03",
+      "lab_name": "BDU TUM SEED Living Lab1",
       "records_preserved": 1788,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_04",
+      "lab_name": "MAK TUMSEED",
       "records_preserved": 2392,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_05",
+      "lab_name": "JKUAT Living Lab",
       "records_preserved": 2286,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_06",
+      "lab_name": "NUST SEED Living Lab",
       "records_preserved": 1372,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_07",
+      "lab_name": "HUYRO SM-MT-2026-01",
       "records_preserved": 1372,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_08",
+      "lab_name": "KNUST_Yeboakrom",
       "records_preserved": 1604,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     },
     {
       "dataset_id": "export_09",
+      "lab_name": "HUYRO SM-LM-2026-01",
       "records_preserved": 1295,
       "raw_bytes_and_sha256_match": true,
       "all_numeric_values_match_source": true,
       "all_timestamp_clock_fields_preserved": true,
-      "identifiers_unassigned": true
+      "lab_name_matches_user_order": true,
+      "meter_phase_time_zone_unassigned": true
     }
   ]
 }

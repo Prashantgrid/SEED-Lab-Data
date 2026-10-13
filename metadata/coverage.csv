@@ -1,11 +1,11 @@
-dataset_id,source_file,record_count,first_timestamp_reported,last_timestamp_reported,nominal_interval_h,expected_hour_slots,unrepresented_hour_slots,coverage_pct,gap_intervals,maximum_gap_missing_slots,negative_power_records,zero_current_power_records,pf_outside_0_1_records,duplicate_of,all_current_power_zero,notes
-export_00,export.csv,3485,2026-05-13T12:00:00,2026-10-13T12:00:00,1,3673,188,94.88156820038115,13,91,0,0,0,,false,
-export_01,export (1).csv,1608,2026-06-12T17:00:00,2026-09-22T16:00:00,1,2448,840,65.68627450980392,68,253,357,2,7,,false,7 PF values outside 0 to 1; retained
-export_02,export (2).csv,2337,2026-06-10T13:00:00,2026-10-13T20:00:00,1,3008,671,77.69281914893617,5,321,4,0,0,,false,
-export_03,export (3).csv,1788,2026-06-29T18:00:00,2026-10-13T16:00:00,1,2543,755,70.31065670467952,52,123,0,0,0,,false,
-export_04,export (4).csv,2392,2026-07-04T15:00:00,2026-10-13T16:00:00,1,2426,34,98.59851607584501,10,10,145,2244,15,,false,15 PF values outside 0 to 1; retained
-export_05,export (5).csv,2286,2026-07-08T12:00:00,2026-10-13T16:00:00,1,2333,47,97.9854264894985,17,8,0,1,68,,false,68 PF values outside 0 to 1; retained
-export_06,export (6).csv,1372,2026-07-11T11:00:00,2026-10-13T14:00:00,1,2260,888,60.70796460176991,13,788,0,0,0,,false,
-export_07,export (7).csv,1372,2026-07-11T11:00:00,2026-10-13T14:00:00,1,2260,888,60.70796460176991,13,788,0,0,0,export_06,false,Byte-identical to export_06; excluded from merged data
-export_08,export (8).csv,1604,2026-08-06T16:00:00,2026-10-13T08:00:00,1,1625,21,98.70769230769231,5,8,1148,0,0,,false,
-export_09,export (9).csv,1295,2026-05-27T05:00:00,2026-10-13T13:00:00,1,3345,2050,38.714499252615845,8,1452,0,1295,0,,true,Current and active power are zero in every provided record
+dataset_id,lab_name,source_file,record_count,first_timestamp_reported,last_timestamp_reported,nominal_interval_h,expected_hour_slots,unrepresented_hour_slots,coverage_pct,gap_intervals,maximum_gap_missing_slots,negative_power_records,zero_current_power_records,pf_outside_0_1_records,duplicate_of,all_current_power_zero,notes
+export_00,BIT STUDENTS DORMS,export.csv,3485,2026-05-13T12:00:00,2026-10-13T12:00:00,1,3673,188,94.88156820038115,13,91,0,0,0,,false,
+export_01,IITB-Pabal,export (1).csv,1608,2026-06-12T17:00:00,2026-09-22T16:00:00,1,2448,840,65.68627450980392,68,253,357,2,7,,false,7 PF values outside 0 to 1; retained
+export_02,ITB Living Lab Garut,export (2).csv,2337,2026-06-10T13:00:00,2026-10-13T20:00:00,1,3008,671,77.69281914893617,5,321,4,0,0,,false,
+export_03,BDU TUM SEED Living Lab1,export (3).csv,1788,2026-06-29T18:00:00,2026-10-13T16:00:00,1,2543,755,70.31065670467952,52,123,0,0,0,,false,
+export_04,MAK TUMSEED,export (4).csv,2392,2026-07-04T15:00:00,2026-10-13T16:00:00,1,2426,34,98.59851607584501,10,10,145,2244,15,,false,15 PF values outside 0 to 1; retained
+export_05,JKUAT Living Lab,export (5).csv,2286,2026-07-08T12:00:00,2026-10-13T16:00:00,1,2333,47,97.9854264894985,17,8,0,1,68,,false,68 PF values outside 0 to 1; retained
+export_06,NUST SEED Living Lab,export (6).csv,1372,2026-07-11T11:00:00,2026-10-13T14:00:00,1,2260,888,60.70796460176991,13,788,0,0,0,,false,
+export_07,HUYRO SM-MT-2026-01,export (7).csv,1372,2026-07-11T11:00:00,2026-10-13T14:00:00,1,2260,888,60.70796460176991,13,788,0,0,0,export_06,false,Byte-identical to NUST SEED Living Lab; labels identify different labs. Preserved in all_living_labs.csv; verify the original export. Excluded from the distinct-content view.
+export_08,KNUST_Yeboakrom,export (8).csv,1604,2026-08-06T16:00:00,2026-10-13T08:00:00,1,1625,21,98.70769230769231,5,8,1148,0,0,,false,
+export_09,HUYRO SM-LM-2026-01,export (9).csv,1295,2026-05-27T05:00:00,2026-10-13T13:00:00,1,3345,2050,38.714499252615845,8,1452,0,1295,0,,true,Current and active power are zero in every provided record
