@@ -1,0 +1,10 @@
+column,data_type,unit,source_column,description
+dataset_id,string,none,Added identifier,"Numbered source export. It is not a verified lab, meter or phase identifier."
+timestamp_reported,string,unspecified time zone,Time,"ISO 8601 civil timestamp, YYYY-MM-DDTHH:MM:SS, with the original reported clock fields preserved. No UTC offset is assigned."
+voltage_V,number,V,Voltage,Reported voltage. Units interpreted as volts from IAMMETER measurement conventions. Phase not supplied.
+current_A,number,A,Current,Reported current. Units interpreted as amperes from IAMMETER measurement conventions. Phase not supplied.
+active_power_W,number,W,Power,Reported active power. Signs preserved. Consumption/export meaning requires the source channel and wiring orientation.
+apparent_power_VA,number,VA,Apparent Power,"Reported apparent power. Units interpreted as volt-amperes. Values are retained from the export, not recomputed."
+power_factor,number,dimensionless,PF,Reported power factor. Values outside 0 to 1 are retained and listed in quality_flags.csv.
+source_file,string,none,Original uploaded filename,Original export used for this row.
+source_row,integer,record index,Added provenance,"One-based CSV record index including the header, which is record 1. First data record is 2."

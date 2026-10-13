@@ -1,0 +1,11 @@
+dataset_id,source_file,canonical_dataset_id,lab_name,meter_sn,phase,time_zone,mapping_status
+export_00,export.csv,export_00,,,,,unconfirmed
+export_01,export (1).csv,export_01,,,,,unconfirmed
+export_02,export (2).csv,export_02,,,,,unconfirmed
+export_03,export (3).csv,export_03,,,,,unconfirmed
+export_04,export (4).csv,export_04,,,,,unconfirmed
+export_05,export (5).csv,export_05,,,,,unconfirmed
+export_06,export (6).csv,export_06,,,,,unconfirmed
+export_07,export (7).csv,export_06,,,,,unconfirmed
+export_08,export (8).csv,export_08,,,,,unconfirmed
+export_09,export (9).csv,export_09,,,,,unconfirmed

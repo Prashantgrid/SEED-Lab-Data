@@ -1,0 +1,523 @@
+{
+  "snapshot_date": "2026-10-13",
+  "uploaded_files": 10,
+  "distinct_export_files": 9,
+  "records_in_uploaded_files": 19539,
+  "records_in_distinct_export_files": 18167,
+  "earliest_timestamp_reported": "2026-05-13T12:00:00",
+  "latest_timestamp_reported": "2026-10-13T20:00:00",
+  "timestamp_time_zone": "not present in source files; not inferred",
+  "nominal_interval_h": 1,
+  "aggregation_semantics": "not stated in CSV: hourly timestamps do not establish whether measurements are snapshots or hourly means",
+  "units_status": "interpreted as standard IAMMETER V, A, W, VA and dimensionless PF; source headers omit explicit units",
+  "lab_meter_phase_mapping_status": "unconfirmed: source files do not identify lab, meter or phase",
+  "cloud_history_completeness": "not verified; all rows from the ten provided CSV files are preserved",
+  "energy_measurements": "not present in the provided files; no energy estimates added",
+  "transformation": "Normalize timestamps and numeric thousands separators, add source provenance; no interpolation, sign changes, filtering or correction of source readings",
+  "duplicate_handling": "Retain all ten raw files and all ten standardized per-export files; omit byte-identical export_07 from all_distinct_exports.csv",
+  "gap_definition": "Unrepresented one-hour civil-time slots between first and last observed timestamps; cause unknown. Counts are not outage indicators and do not establish UTC duration.",
+  "gap_intervals_in_distinct_exports": 191,
+  "quality_flag_rows_in_distinct_exports": 92,
+  "profiles": [
+    {
+      "dataset_id": "export_00",
+      "source_file": "export.csv",
+      "source_sha256": "e98728b53b140dd6b8dab22c51b8ae85b73b22826638d4cbd3dfb21255582c7c",
+      "source_bytes": 183999,
+      "record_count": 3485,
+      "first_timestamp_reported": "2026-05-13T12:00:00",
+      "last_timestamp_reported": "2026-10-13T12:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 3673,
+      "unrepresented_hour_slots": 188,
+      "coverage_pct": 94.88156820038115,
+      "gap_intervals": 13,
+      "maximum_gap_missing_slots": 91,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 0,
+      "zero_current_power_records": 0,
+      "pf_outside_0_1_records": 0,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_00.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 3,
+          "max": 247.3
+        },
+        "current_A": {
+          "min": 0.04,
+          "max": 21.23
+        },
+        "active_power_W": {
+          "min": 0,
+          "max": 4643
+        },
+        "apparent_power_VA": {
+          "min": 0.12,
+          "max": 4768.258
+        },
+        "power_factor": {
+          "min": 0,
+          "max": 0.995
+        }
+      },
+      "notes": ""
+    },
+    {
+      "dataset_id": "export_01",
+      "source_file": "export (1).csv",
+      "source_sha256": "bda33eb8afed5c0a1fdb71716bc1e3b90e941ad4a755fcaf24b2c8a26ecf56b0",
+      "source_bytes": 80988,
+      "record_count": 1608,
+      "first_timestamp_reported": "2026-06-12T17:00:00",
+      "last_timestamp_reported": "2026-09-22T16:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 2448,
+      "unrepresented_hour_slots": 840,
+      "coverage_pct": 65.68627450980392,
+      "gap_intervals": 68,
+      "maximum_gap_missing_slots": 253,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 357,
+      "zero_current_power_records": 2,
+      "pf_outside_0_1_records": 7,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_01.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 0,
+          "max": 273.7
+        },
+        "current_A": {
+          "min": 0,
+          "max": 29.61
+        },
+        "active_power_W": {
+          "min": -4732,
+          "max": 6897
+        },
+        "apparent_power_VA": {
+          "min": 0,
+          "max": 6899.13
+        },
+        "power_factor": {
+          "min": 0,
+          "max": 1.089
+        }
+      },
+      "notes": "7 PF values outside 0 to 1; retained"
+    },
+    {
+      "dataset_id": "export_02",
+      "source_file": "export (2).csv",
+      "source_sha256": "5556a8a1fc8c2c16cb70ecbdc5d6bd87db59868edba4b0d1071d828e70529808",
+      "source_bytes": 113224,
+      "record_count": 2337,
+      "first_timestamp_reported": "2026-06-10T13:00:00",
+      "last_timestamp_reported": "2026-10-13T20:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 3008,
+      "unrepresented_hour_slots": 671,
+      "coverage_pct": 77.69281914893617,
+      "gap_intervals": 5,
+      "maximum_gap_missing_slots": 321,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 4,
+      "zero_current_power_records": 0,
+      "pf_outside_0_1_records": 0,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_02.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 179.9,
+          "max": 237.9
+        },
+        "current_A": {
+          "min": 0.16,
+          "max": 12.63
+        },
+        "active_power_W": {
+          "min": -250,
+          "max": 2629
+        },
+        "apparent_power_VA": {
+          "min": 35.456,
+          "max": 2735.658
+        },
+        "power_factor": {
+          "min": 0.012,
+          "max": 0.98
+        }
+      },
+      "notes": ""
+    },
+    {
+      "dataset_id": "export_03",
+      "source_file": "export (3).csv",
+      "source_sha256": "1497fdfaaa8163d5fbb55803546bb4e31968cee8640a65d4c64e225e6887d575",
+      "source_bytes": 75998,
+      "record_count": 1788,
+      "first_timestamp_reported": "2026-06-29T18:00:00",
+      "last_timestamp_reported": "2026-10-13T16:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 2543,
+      "unrepresented_hour_slots": 755,
+      "coverage_pct": 70.31065670467952,
+      "gap_intervals": 52,
+      "maximum_gap_missing_slots": 123,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 0,
+      "zero_current_power_records": 0,
+      "pf_outside_0_1_records": 0,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_03.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 202.7,
+          "max": 243.2
+        },
+        "current_A": {
+          "min": 0.05,
+          "max": 0.72
+        },
+        "active_power_W": {
+          "min": 0,
+          "max": 87
+        },
+        "apparent_power_VA": {
+          "min": 10.17,
+          "max": 158.976
+        },
+        "power_factor": {
+          "min": 0,
+          "max": 0.942
+        }
+      },
+      "notes": ""
+    },
+    {
+      "dataset_id": "export_04",
+      "source_file": "export (4).csv",
+      "source_sha256": "c8f0c31dc75bb87fbe1b238534d3b32a804221b8f7cc7bedad19773d00f871f4",
+      "source_bytes": 81593,
+      "record_count": 2392,
+      "first_timestamp_reported": "2026-07-04T15:00:00",
+      "last_timestamp_reported": "2026-10-13T16:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 2426,
+      "unrepresented_hour_slots": 34,
+      "coverage_pct": 98.59851607584501,
+      "gap_intervals": 10,
+      "maximum_gap_missing_slots": 10,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 145,
+      "zero_current_power_records": 2244,
+      "pf_outside_0_1_records": 15,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_04.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 229.3,
+          "max": 230
+        },
+        "current_A": {
+          "min": 0,
+          "max": 6.06
+        },
+        "active_power_W": {
+          "min": -1392,
+          "max": 6
+        },
+        "apparent_power_VA": {
+          "min": 0,
+          "max": 1391.376
+        },
+        "power_factor": {
+          "min": 0,
+          "max": 1.029
+        }
+      },
+      "notes": "15 PF values outside 0 to 1; retained"
+    },
+    {
+      "dataset_id": "export_05",
+      "source_file": "export (5).csv",
+      "source_sha256": "453b6775dbbbb68506bf378432615b248bebd04b3d3b342975e1fbfedcfa7dc1",
+      "source_bytes": 102161,
+      "record_count": 2286,
+      "first_timestamp_reported": "2026-07-08T12:00:00",
+      "last_timestamp_reported": "2026-10-13T16:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 2333,
+      "unrepresented_hour_slots": 47,
+      "coverage_pct": 97.9854264894985,
+      "gap_intervals": 17,
+      "maximum_gap_missing_slots": 8,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 0,
+      "zero_current_power_records": 1,
+      "pf_outside_0_1_records": 68,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_05.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 225.2,
+          "max": 244.6
+        },
+        "current_A": {
+          "min": 0,
+          "max": 8.64
+        },
+        "active_power_W": {
+          "min": 0,
+          "max": 2021
+        },
+        "apparent_power_VA": {
+          "min": 0,
+          "max": 2020.032
+        },
+        "power_factor": {
+          "min": 0,
+          "max": 1.268
+        }
+      },
+      "notes": "68 PF values outside 0 to 1; retained"
+    },
+    {
+      "dataset_id": "export_06",
+      "source_file": "export (6).csv",
+      "source_sha256": "34cd333fdc8a569a80b8df1bb9bf31866ac4c6fa149e4ab4aeeb8f3ce65886c4",
+      "source_bytes": 69302,
+      "record_count": 1372,
+      "first_timestamp_reported": "2026-07-11T11:00:00",
+      "last_timestamp_reported": "2026-10-13T14:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 2260,
+      "unrepresented_hour_slots": 888,
+      "coverage_pct": 60.70796460176991,
+      "gap_intervals": 13,
+      "maximum_gap_missing_slots": 788,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 0,
+      "zero_current_power_records": 0,
+      "pf_outside_0_1_records": 0,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_06.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 228.1,
+          "max": 231.5
+        },
+        "current_A": {
+          "min": 0.43,
+          "max": 15.73
+        },
+        "active_power_W": {
+          "min": 39,
+          "max": 3583
+        },
+        "apparent_power_VA": {
+          "min": 98.599,
+          "max": 3608.462
+        },
+        "power_factor": {
+          "min": 0.396,
+          "max": 0.995
+        }
+      },
+      "notes": ""
+    },
+    {
+      "dataset_id": "export_07",
+      "source_file": "export (7).csv",
+      "source_sha256": "34cd333fdc8a569a80b8df1bb9bf31866ac4c6fa149e4ab4aeeb8f3ce65886c4",
+      "source_bytes": 69302,
+      "record_count": 1372,
+      "first_timestamp_reported": "2026-07-11T11:00:00",
+      "last_timestamp_reported": "2026-10-13T14:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 2260,
+      "unrepresented_hour_slots": 888,
+      "coverage_pct": 60.70796460176991,
+      "gap_intervals": 13,
+      "maximum_gap_missing_slots": 788,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 0,
+      "zero_current_power_records": 0,
+      "pf_outside_0_1_records": 0,
+      "all_current_power_zero": false,
+      "duplicate_of": "export_06",
+      "standardized_path": "data/export_07.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 228.1,
+          "max": 231.5
+        },
+        "current_A": {
+          "min": 0.43,
+          "max": 15.73
+        },
+        "active_power_W": {
+          "min": 39,
+          "max": 3583
+        },
+        "apparent_power_VA": {
+          "min": 98.599,
+          "max": 3608.462
+        },
+        "power_factor": {
+          "min": 0.396,
+          "max": 0.995
+        }
+      },
+      "notes": "Byte-identical to export_06; excluded from merged data"
+    },
+    {
+      "dataset_id": "export_08",
+      "source_file": "export (8).csv",
+      "source_sha256": "58d13c8614043903b54c6b9771ef0e6563f7cebf4f61cf2c8888337399a92dab",
+      "source_bytes": 76734,
+      "record_count": 1604,
+      "first_timestamp_reported": "2026-08-06T16:00:00",
+      "last_timestamp_reported": "2026-10-13T08:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 1625,
+      "unrepresented_hour_slots": 21,
+      "coverage_pct": 98.70769230769231,
+      "gap_intervals": 5,
+      "maximum_gap_missing_slots": 8,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 1148,
+      "zero_current_power_records": 0,
+      "pf_outside_0_1_records": 0,
+      "all_current_power_zero": false,
+      "duplicate_of": "",
+      "standardized_path": "data/export_08.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 213.7,
+          "max": 236.5
+        },
+        "current_A": {
+          "min": 0.2,
+          "max": 7.13
+        },
+        "active_power_W": {
+          "min": -1515,
+          "max": 1353
+        },
+        "apparent_power_VA": {
+          "min": 44.72,
+          "max": 1532.96
+        },
+        "power_factor": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "notes": ""
+    },
+    {
+      "dataset_id": "export_09",
+      "source_file": "export (9).csv",
+      "source_sha256": "7f07e38b3a737f1d18d54a395550b450e876c523a3ebbf94cf7b4deac139686c",
+      "source_bytes": 43384,
+      "record_count": 1295,
+      "first_timestamp_reported": "2026-05-27T05:00:00",
+      "last_timestamp_reported": "2026-10-13T13:00:00",
+      "nominal_interval_h": 1,
+      "expected_hour_slots": 3345,
+      "unrepresented_hour_slots": 2050,
+      "coverage_pct": 38.714499252615845,
+      "gap_intervals": 8,
+      "maximum_gap_missing_slots": 1452,
+      "duplicate_timestamp_count": 0,
+      "source_order_monotonic": true,
+      "negative_power_records": 0,
+      "zero_current_power_records": 1295,
+      "pf_outside_0_1_records": 0,
+      "all_current_power_zero": true,
+      "duplicate_of": "",
+      "standardized_path": "data/export_09.csv",
+      "lab_name": null,
+      "meter_sn": null,
+      "phase": null,
+      "time_zone": null,
+      "value_ranges": {
+        "voltage_V": {
+          "min": 229.4,
+          "max": 231.4
+        },
+        "current_A": {
+          "min": 0,
+          "max": 0
+        },
+        "active_power_W": {
+          "min": 0,
+          "max": 0
+        },
+        "apparent_power_VA": {
+          "min": 0,
+          "max": 0
+        },
+        "power_factor": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "notes": "Current and active power are zero in every provided record"
+    }
+  ]
+}

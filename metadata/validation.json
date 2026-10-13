@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "validation_date": "2026-10-13",
+  "source_files": 10,
+  "distinct_source_files": 9,
+  "source_rows_preserved_in_individual_files": 19539,
+  "rows_in_distinct_merged_file": 18167,
+  "negative_power_source_rows_preserved": 1654,
+  "distinct_gap_intervals_verified": 191,
+  "unrepresented_hour_slots_in_distinct_exports": 5494,
+  "quality_flag_rows_verified": 92,
+  "raw_file_copies_identical": true,
+  "all_five_numeric_measurements_preserved_by_decimal_comparison": true,
+  "timestamp_normalization_preserves_clock_fields_without_timezone_conversion": true,
+  "duplicate_file_excluded_only_from_merged_dataset": true,
+  "lab_meter_phase_and_timezone_fields_not_inferred": true,
+  "datasets": [
+    {
+      "dataset_id": "export_00",
+      "records_preserved": 3485,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_01",
+      "records_preserved": 1608,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_02",
+      "records_preserved": 2337,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_03",
+      "records_preserved": 1788,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_04",
+      "records_preserved": 2392,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_05",
+      "records_preserved": 2286,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_06",
+      "records_preserved": 1372,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_07",
+      "records_preserved": 1372,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_08",
+      "records_preserved": 1604,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    },
+    {
+      "dataset_id": "export_09",
+      "records_preserved": 1295,
+      "raw_bytes_and_sha256_match": true,
+      "all_numeric_values_match_source": true,
+      "all_timestamp_clock_fields_preserved": true,
+      "identifiers_unassigned": true
+    }
+  ]
+}
