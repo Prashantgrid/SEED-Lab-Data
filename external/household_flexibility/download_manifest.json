@@ -1,0 +1,49 @@
+{
+  "note": "Measured vs model-derived fields are distinguished in the README.",
+  "records": [
+    {
+      "data_kind": "measured charging-session events and energy",
+      "file": "data/norway_ev_2024_v2/Dataset1_charging_reports.csv",
+      "md5": "8bb7463d760cc846271b1ed9bdf808fd",
+      "published_md5": "8bb7463d760cc846271b1ed9bdf808fd",
+      "sha256": "48c15189e2c1acca7a34d4e3789b1d615ddd091849a9803ae39aee8aec474ed2",
+      "size_bytes": 3105240,
+      "source": "norway_ev_2024_v2",
+      "status": "downloaded",
+      "url": "https://zenodo.org/records/13896176/files/Dataset1_charging_reports.csv?download=1"
+    },
+    {
+      "data_kind": "inferred per-user EV charging power and capacity",
+      "file": "data/norway_ev_2024_v2/Dataset2_user_predictions.csv",
+      "md5": "ed0a2c2a2600ca5b5e08f98d7d7d6d10",
+      "published_md5": "ed0a2c2a2600ca5b5e08f98d7d7d6d10",
+      "sha256": "7596a444545b9d975821f2c61b0bf061a6d3610a1dff0f18dd5e3dc666c372fa",
+      "size_bytes": 9687,
+      "source": "norway_ev_2024_v2",
+      "status": "downloaded",
+      "url": "https://zenodo.org/records/13896176/files/Dataset2_user_predictions.csv?download=1"
+    },
+    {
+      "data_kind": "inferred charging-session parameters",
+      "file": "data/norway_ev_2024_v2/Dataset3_session_predictions.csv",
+      "md5": "df82be864494c37f727e19215c62c235",
+      "published_md5": "df82be864494c37f727e19215c62c235",
+      "sha256": "50cc1be432cbe21b19a705264a62bcc920810db80e4463a414b2bdfdd70ebcc5",
+      "size_bytes": 3868748,
+      "source": "norway_ev_2024_v2",
+      "status": "downloaded",
+      "url": "https://zenodo.org/records/13896176/files/Dataset3_session_predictions.csv?download=1"
+    },
+    {
+      "data_kind": "meter-based hourly consumption/generation; gaps may be interpolated",
+      "file": "data/opsd_cossmic_2020_04_15/household_data_60min_singleindex.csv",
+      "md5": "de16dacf612292fd151e02f56ef025f7",
+      "published_md5": null,
+      "sha256": "15956440b27465686eae2abf5895cbc3dab80f934a891bcb2f4f944428e97d60",
+      "size_bytes": 15654559,
+      "source": "opsd_cossmic_2020_04_15",
+      "status": "downloaded",
+      "url": "https://data.open-power-system-data.org/household_data/2020-04-15/household_data_60min_singleindex.csv"
+    }
+  ]
+}
